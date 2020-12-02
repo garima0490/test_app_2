@@ -1,5 +1,9 @@
 <% if @user.errors.any? %>
+<<<<<<< HEAD
   <h2>The following errors prevented the signup</h2>
+=======
+  <h2>The following errors prevented the article from being saved</h2>
+>>>>>>> origin/master
   <ul>
     <% @user.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
@@ -26,7 +30,11 @@
 
 
   <p>
+<<<<<<< HEAD
     <%= f.submit(@user.new_record? ? "Signup" : "Update Account" )%>
+=======
+    <%= f.submit :Signup%>
+>>>>>>> origin/master
   </p>
 
 <% end %>
