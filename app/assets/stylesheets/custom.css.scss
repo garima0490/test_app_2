@@ -1,3 +1,4 @@
+/*
 @import 'bootstrap/dist/css/bootstrap';
 .navbar {
   background-color: black !important;
@@ -17,8 +18,85 @@
   letter-spacing: -1px;
   font-weight: bold;
 }
+*/
+/*--------INITIAL SETUP--------------*/
+* {
+  margin: 0;
+  padding:0;
+  box-sizing:border-box;
+}
 
+html {
+  background-color: white;
+  color: rgb(32, 32, 32);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+/*-------REUSE---------------*/
+.row {
+  max-width:1140px;
+  margin: 0 auto;
+}
+
+/*-----HEADER------*/
+header {
+  background-image: url(bg.jpeg); 
+  height:100vh;
+  background-size:cover;
+  background-position: center;
+  
+}
+.home-text{
+  color: rgb(255, 255, 255);
+  font-size:  250% ;
+  text-transform: uppercase;
+  margin :15px;
+}
+.main-menu li{
+  display: block;
+  list-style:none;
+  margin-bottom: 40px;
+}
+.main-menu li a:link,.main-menu li a:visited { 
+  padding: 13px 40px 13px ;
+  font-size: 150%;
+  list-style-type: none;
+  color: white;
+  background-color: rgb(71, 45, 45);
+  border-radius: 200px;
+  transition: background-color 0.2s color 0.2s;
+}
+.main-menu li a:hover,.main-menu li a:active{
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+.main-btn{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/*-----HEADINGS------*/
 
 h1 {
-  color: red;
+  color: rgb(12, 11, 11);
+  margin-top : 44px ;
+  margin-left: 34px;
+  display:inline-block;
 }
+
+h2 {
+  color:rgb(206, 173, 84);
+  margin-top: 34px;
+  margin-right: 34px;;
+
+}
+
+
+
+
+
